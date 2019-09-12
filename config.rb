@@ -28,9 +28,9 @@ page '/*.txt', layout: false
 # )
 
 # Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
 
+# https://middlemanapp.com/advanced/pretty-urls/
+activate :directory_indexes
 # helpers do
 #   def some_helper
 #     'Helping'
