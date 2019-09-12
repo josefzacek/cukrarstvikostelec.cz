@@ -31,6 +31,13 @@ page '/*.txt', layout: false
 
 # https://middlemanapp.com/advanced/pretty-urls/
 activate :directory_indexes
+
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
+
+# Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
 #     'Helping'
