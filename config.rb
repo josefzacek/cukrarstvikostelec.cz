@@ -46,6 +46,9 @@ end
 
 # activate Sprockets to compile js
 activate :sprockets
+# Use relative URLs
+activate :relative_assets
+set :relative_links, true
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
