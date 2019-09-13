@@ -44,6 +44,8 @@ end
 #   end
 # end
 
+# activate Sprockets to compile js
+activate :sprockets
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
