@@ -49,6 +49,13 @@ activate :sprockets
 # Use relative URLs
 activate :relative_assets
 set :relative_links, true
+
+# deployment
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
