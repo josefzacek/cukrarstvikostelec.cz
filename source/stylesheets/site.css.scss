@@ -5,3 +5,14 @@ body {
 }
 
 @import "bootstrap";
+
+.banner {
+  background-image: url("/images/banner-image.jpg");
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  h2 {
+    background-color: #ffffff7a;
+  }
+}
