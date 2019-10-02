@@ -12,6 +12,8 @@
     <%= javascript_include_tag('https://use.fontawesome.com/29c910b8fd.js') %>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
     <%= partial "partials/header" %>
     <%= yield %>
     <%= partial "partials/footer" %>
