@@ -3,7 +3,7 @@ $main-color: #360D36;
 
 body {
   background-color: #ffff;
-  color: #360D36;
+  color: $main-color;
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
 }
 
