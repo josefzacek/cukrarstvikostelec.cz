@@ -23,6 +23,35 @@ body {
     background-color: #ffffff7a;
   }
 }
+
+.contact-section {
+  background-color: $color-gray;
+  position: relative;
+  &:before{
+    content: " ";
+    display: block;
+    background: $color-gray;
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    left: -200%;
+    top: 0;
+  }
+  &:after{
+    content: " ";
+    display: block;
+    background: $color-gray;
+    height: 100%;
+    width: 250%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  i {
+    width: 50px;
+  }
+}
+
 .footer {
   border-top: solid 1px $color-gray;
 }
