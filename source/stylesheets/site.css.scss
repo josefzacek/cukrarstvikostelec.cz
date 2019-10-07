@@ -1,10 +1,13 @@
 $color-gray: #F2F2F2;
 $main-color: #360D36;
 
-body {
-  background-color: #ffff;
-  color: $main-color;
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+html {
+  overflow-x: hidden;
+  body {
+    color: $main-color;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    overflow-x: hidden;
+  }
 }
 
 * {
@@ -48,7 +51,7 @@ body {
     top: 0;
   }
   i {
-    width: 50px;
+    width: 21px;
   }
 }
 
