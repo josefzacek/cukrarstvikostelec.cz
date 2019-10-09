@@ -1,20 +1,26 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 $color-gray: #F2F2F2;
-$main-color: #360D36;
+$color-purple: #360D36;
+
+$theme-colors: (
+  primary: $color-purple,
+  secondary: $color-gray,
+);
+
+@import "bootstrap";
 
 html {
   overflow-x: hidden;
   body {
-    color: $main-color;
+    color: $color-purple;
     font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
     overflow-x: hidden;
   }
 }
 
-* {
-  color: $main-color;
-}
 
-@import "bootstrap";
 
 .banner {
   background-image: url("/images/banner-image.jpg");
@@ -24,6 +30,20 @@ html {
 
   h2 {
     background-color: #ffffff7a;
+  }
+}
+
+.full-bg {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX( -50%);
+    height: 100%;
+    width: 100vw;
+    background: $color-gray;
   }
 }
 
