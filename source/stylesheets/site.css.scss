@@ -2,12 +2,12 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 $color-gray: #F2F2F2;
-$main-color: #360D36;
+$color-purple: #360D36;
 
 html {
   overflow-x: hidden;
   body {
-    color: $main-color;
+    color: $color-purple;
     font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
     overflow-x: hidden;
   }
