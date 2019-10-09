@@ -4,6 +4,8 @@
 $color-gray: #F2F2F2;
 $color-purple: #360D36;
 
+@import "bootstrap";
+
 html {
   overflow-x: hidden;
   body {
@@ -14,7 +16,6 @@ html {
 }
 
 
-@import "bootstrap";
 
 .banner {
   background-image: url("/images/banner-image.jpg");
