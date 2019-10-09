@@ -30,6 +30,20 @@ html {
   }
 }
 
+.full-bg {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX( -50%);
+    height: 100%;
+    width: 100vw;
+    background: $color-gray;
+  }
+}
+
 .contact-section {
   background-color: $color-gray;
   position: relative;
