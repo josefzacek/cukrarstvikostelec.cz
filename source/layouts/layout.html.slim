@@ -5,7 +5,7 @@ html
     meta content="ie=edge" http-equiv="x-ua-compatible"
     meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"
     meta name="author" content="Josef Zacek"
-    link href="images/favicon.ico" rel="icon" type="image/x-icon"
+    = favicon_tag 'images/favicon.ico'
     /! Use the title from a page's frontmatter if it has one
     title = current_page.data.title || "Cukrářství Kostelec u Zlína"
     meta name="description" content="#{current_page.data.description || 'Cukrářství Kostelec'}"
