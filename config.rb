@@ -28,6 +28,12 @@ page '/*.txt', layout: false
 # )
 
 # Helpers
+helpers do
+  # highlight current page in header navigation
+  def nav_active(path)
+    current_page.path.start_with?(path) ? 'active' : ''
+  end
+end
 
 # https://middlemanapp.com/advanced/pretty-urls/
 activate :directory_indexes
