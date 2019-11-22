@@ -6,9 +6,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse.justify-content-end
     ul.navbar-nav
-      li.nav-item.active
-        a.nav-link href="/"
-          | ÚVOD
+      li.nav-item[class="#{nav_active('index')}"]
+        = link_to 'ÚVOD', '/', class: "nav-link"
       / li.nav-item
       /   a.nav-link href="#"
       /     | SVATEBNÍ
