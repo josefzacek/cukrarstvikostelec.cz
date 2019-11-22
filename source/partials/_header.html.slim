@@ -23,6 +23,5 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white
       / li.nav-item
       /   a.nav-link href="#"
       /     | ZÁKUSKY
-      li.nav-item
-        a.nav-link href="/kontakt"
-          | KONTAKT
+      li.nav-item[class="#{nav_active('kontakt')}"]
+        = link_to 'KONTAKT', '/kontakt', class: "nav-link"
