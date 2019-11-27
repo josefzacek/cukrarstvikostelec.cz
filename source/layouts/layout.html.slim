@@ -10,6 +10,7 @@ html
     title = current_page.data.title || "Cukrářství Kostelec u Zlína"
     meta name="description" content="#{current_page.data.description || 'Cukrářství Kostelec'}"
     = stylesheet_link_tag "https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    = stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.css"
     = stylesheet_link_tag "site"
     = javascript_include_tag('https://use.fontawesome.com/29c910b8fd.js')
     /! Global site tag (gtag.js) - Google Analytics
@@ -32,4 +33,5 @@ html
     = javascript_include_tag('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
     = javascript_include_tag('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
     = javascript_include_tag('https://unpkg.com/leaflet@1.5.1/dist/leaflet.js')
+    = javascript_include_tag('https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.js')
     = javascript_include_tag "site"

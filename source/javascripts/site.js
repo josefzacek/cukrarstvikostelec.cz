@@ -13,3 +13,9 @@
     map.dragging.disable();
     map.scrollWheelZoom.disable();
   }
+
+
+  // gallery pages
+  baguetteBox.run('.grid-gallery', {
+    animation: 'slideIn'
+  });
