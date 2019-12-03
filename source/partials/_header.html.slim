@@ -20,8 +20,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white
       / li.nav-item
       /   a.nav-link href="#"
       /     | PRO MUŽE
-      / li.nav-item
-      /   a.nav-link href="#"
-      /     | ZÁKUSKY
+      li.nav-item[class="#{nav_active('zakusky')}"]
+        = link_to 'ZÁKUSKY', '/zakusky', class: "nav-link"
       li.nav-item[class="#{nav_active('kontakt')}"]
         = link_to 'KONTAKT', '/kontakt', class: "nav-link"
