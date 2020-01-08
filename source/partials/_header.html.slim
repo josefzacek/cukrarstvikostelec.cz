@@ -11,9 +11,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white
       / li.nav-item
       /   a.nav-link href="#"
       /     | SVATEBNÍ
-      / li.nav-item
-      /   a.nav-link href="#"
-      /     | PRO DĚTI
+      li.nav-item[class="#{nav_active('dorty-pro-deti')}"]
+        = link_to 'PRO DĚTI', '/dorty-pro-deti', class: "nav-link"
       / li.nav-item
       /   a.nav-link href="#"
       /     | PRO ŽENY
