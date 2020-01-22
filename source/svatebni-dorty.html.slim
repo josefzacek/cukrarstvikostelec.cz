@@ -1,0 +1,28 @@
+---
+title: Cukrářství Kostelec u Zlína - Ruční výroba domácích zákusků a dortů
+description: Cukrářství Kostelec u Zlína nabízí široký sortiment svatebních dortů, narozeninových dortů, zákusků, vánočního cukroví a jiného drobného cukroví
+---
+
+
+.container
+  .row
+    .col-md-8
+      h1.mt-4
+        | Svatební dorty
+
+      p.mt-3
+        | Svatební dort má možnost výjimečně ozdobit slavnostní tabuli v tento jedinečný den, tak aby na to všichni zúčastnění dlouho vzpomínali. Každá svatba je individuální záležitost, speciálně pro Vás připravená na míru.
+
+      p.mt-3
+        | Vše vychází z dohodnutého termínu a místa s dostatečným předstihem, poté nadchází upřesňující schůzky k dohodnutí konkrétní zakázky. Upřesníme počet, tvary, barvy, složení a to vše podle vašich potřeb.
+
+  - zakuskyFolder = Dir.glob("source/images/svatebni/*.jpg")
+
+  .row.grid-gallery.mt-5
+
+    - zakuskyFolder.each do |img|
+
+      .col-md-6.col-lg-4.mb-3
+
+        = link_to "../images/svatebni/#{img.split('/').last}", class: 'lightbox', title: img.split('/').last().gsub('-', ' ').sub('.jpg','').capitalize
+            = image_tag "svatebni/#{img.split('/').last}", class: 'img-fluid', alt: img.split('/').last().gsub('-', ' ').sub('.jpg','').capitalize
