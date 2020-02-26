@@ -1,0 +1,28 @@
+---
+title: Cukrářství Kostelec u Zlína - Ruční výroba domácích dětských dortů
+description: Cukrářství Kostelec u Zlína nabízí široký sortiment svatebních dortů, narozeninových dortů, zákusků, vánočního cukroví a jiného drobného cukroví
+---
+
+
+.container
+  .row
+    .col-md-8
+      h1.mt-4
+        | Dorty pro muže
+
+      p.mt-3
+        | Máte doma mlsouna, který si potrpí na sladké? Dorty pro muže připravíme k narozeninám, svátku i jiné příležitosti.
+
+      p.mt-3
+        | Využijte možnosti nechat si vyrobit dort podle svých představ s výbornou chutí.
+
+  - dortyProDetiFolder = Dir.glob("source/images/dorty-pro-muze/*.jpg")
+
+  .row.grid-gallery.mt-5
+
+    - dortyProDetiFolder.each do |img|
+
+      .col-md-6.col-lg-4.mb-3
+
+        = link_to "../images/dorty-pro-muze/#{img.split('/').last}", class: 'lightbox', title: img.split('/').last().gsub('-', ' ').sub('.jpg','')
+            = image_tag "dorty-pro-muze/#{img.split('/').last}", class: 'img-fluid', alt: img.split('/').last().gsub('-', ' ').sub('.jpg','')
