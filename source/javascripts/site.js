@@ -1,6 +1,6 @@
-// This is where it all goes :)
+$(document).ready(function() {
 
-// leaflet map on contact page
+  // leaflet map on contact page
   if ($('#contact-map').length) {
     var map = L.map('contact-map').setView([49.261439, 17.702072], 14);
 
@@ -19,3 +19,4 @@
   baguetteBox.run('.grid-gallery', {
     animation: 'slideIn'
   });
+})
