@@ -19,4 +19,26 @@ $(document).ready(function() {
   baguetteBox.run('.grid-gallery', {
     animation: 'slideIn'
   });
+
+
+  // contact form submit using ajax
+  $("#ajaxForm").submit(function(e){
+        e.preventDefault();
+        var href = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: href,
+            data: $(this).serialize(),
+            success: function(response){
+                if(response.status == "success"){
+                  $('.form-sent').addClass('is-active');
+                  $("#name, #email, #phone, #comment").val(''); // clear fields values
+                  $("button.btn").hide(); // hide submit button 
+                } else {
+                  alert("An error occured: " + response.message);
+                }
+            }
+        });
+    });
 })
