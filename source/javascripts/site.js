@@ -19,3 +19,8 @@
   baguetteBox.run('.grid-gallery', {
     animation: 'slideIn'
   });
+
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy-loaded-image",
+    threshold: 0
+  });
