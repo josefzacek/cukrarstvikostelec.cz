@@ -15,9 +15,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white
       / li.nav-item
       /   a.nav-link href="#"
       /     | PRO ŽENY
-      / li.nav-item
-      /   a.nav-link href="#"
-      /     | PRO MUŽE
+      li.nav-item[class="#{nav_active('dorty-pro-muze')}"]
+        = link_to 'PRO MUŽE', '/dorty-pro-muze', class: "nav-link"
       li.nav-item[class="#{nav_active('zakusky')}"]
         = link_to 'ZÁKUSKY', '/zakusky', class: "nav-link"
       li.nav-item[class="#{nav_active('kontakt')}"]
