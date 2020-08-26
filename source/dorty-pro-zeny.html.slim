@@ -14,3 +14,15 @@ description: Cukrářství Kostelec u Zlína nabízí široký sortiment svatebn
 
       p.mt-3
         | Například dort v podobě kabelky, parfému nebo jejího oblíbeného zvířátka fantazii se meze nekladou
+
+
+  - dortyProZenyFolder = Dir.glob("source/images/dorty-pro-zeny/*.jpg")
+
+  .row.grid-gallery.mt-5
+
+    - dortyProZenyFolder.each do |img|
+
+      .col-md-6.col-lg-4.mb-3
+
+        = link_to "../images/dorty-pro-zeny/#{img.split('/').last}", class: 'lightbox', title: 'Dort pro ženu'
+          = image_tag("dort.svg", class: "img-fluid lazy-loaded-image", alt: 'Dort pro ženu', :data => { :src => "../images/dorty-pro-zeny/#{img.split('/').last}" })
