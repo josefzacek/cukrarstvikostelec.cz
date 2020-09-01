@@ -12,9 +12,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white
         = link_to 'SVATEBNÍ', '/svatebni-dorty', class: "nav-link"
       li.nav-item[class="#{nav_active('dorty-pro-deti')}"]
         = link_to 'PRO DĚTI', '/dorty-pro-deti', class: "nav-link"
-      / li.nav-item
-      /   a.nav-link href="#"
-      /     | PRO ŽENY
+      li.nav-item[class="#{nav_active('dorty-pro-zeny')}"]
+        = link_to 'PRO ŽENY', '/dorty-pro-zeny', class: "nav-link"
       li.nav-item[class="#{nav_active('dorty-pro-muze')}"]
         = link_to 'PRO MUŽE', '/dorty-pro-muze', class: "nav-link"
       li.nav-item[class="#{nav_active('zakusky')}"]
