@@ -25,4 +25,4 @@ description: Cukrářství Kostelec u Zlína nabízí široký sortiment svatebn
       .col-md-6.col-lg-4.mb-3
 
         = link_to "../images/svatebni/#{img.split('/').last}", class: 'lightbox', title: 'Svatebni dort'
-            = image_tag "svatebni/#{img.split('/').last}", class: 'img-fluid', alt: 'Svatebni dort'
+          = image_tag("dort.svg", class: "img-fluid lazy-loaded-image" ,alt: "Svatebni dort", :data => { :src => "../images/svatebni/#{img.split('/').last}" })

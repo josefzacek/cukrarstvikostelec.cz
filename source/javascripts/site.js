@@ -34,7 +34,7 @@ $(document).ready(function() {
                 if(response.status == "success"){
                   $('.form-sent').addClass('is-active');
                   $("#name, #email, #phone, #comment").val(''); // clear fields values
-                  $("button.btn").hide(); // hide submit button 
+                  $("button.btn").hide(); // hide submit button
                 } else {
                   alert("An error occured: " + response.message);
                 }
@@ -42,3 +42,8 @@ $(document).ready(function() {
         });
     });
 })
+
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy-loaded-image",
+    threshold: 0
+  });
