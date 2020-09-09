@@ -24,8 +24,8 @@ description: Kontaktujte Cukrářství Kostelec u Zlína, nabízíme široký so
     .col-md-6.mt-4.bg-white
       form.p-3#ajaxForm action="https://formcarry.com/s/DKWunXdI_SHM" method="POST" accept-charset="UTF-8"
         .form-group
-          label for="name"  Jméno:
-          input#name.form-control name="name" type="text"
+          label for="name"  Jméno*:
+          input#name.form-control name="Jmeno" type="text" required="true" oninvalid="this.setCustomValidity('Povinný údaj')" oninput="this.setCustomValidity('')"
 
         .form-group
           label for="email"  Email:
