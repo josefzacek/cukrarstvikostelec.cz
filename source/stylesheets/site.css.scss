@@ -23,7 +23,15 @@ html {
   }
 }
 
-
+// success contact form message when form sent
+.form-sent {
+  display: none;
+  background: #f2f2f2;
+  padding: 20px;
+  &.is-active {
+    display: block;
+  }
+}
 
 .banner {
   background-image: url("/images/banner-image.jpg");
